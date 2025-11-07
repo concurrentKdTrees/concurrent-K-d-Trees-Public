@@ -130,7 +130,7 @@ public class LockFreeKDTreeTest {
 
         long total_Operations = ob.totalOperations();
         double throughput = (total_Operations / (1000000.0 * time)) * 1000;
-        //int deleted = ob.instance.getPhysicalDeletionCount();
+        
 
         System.out.printf("\t:num_threads:%d\t:range:%d\t:total_Operations:%d\t:throughput:%.4f\t:Dims:%d\n", num_threads, range, total_Operations, throughput, dims);
     }
